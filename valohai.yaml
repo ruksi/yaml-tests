@@ -16,3 +16,27 @@
       - name: gamma
         type: string
         default: g g G
+    inputs:
+      - name: dataset
+        optional: true
+
+- pipeline:
+    name: parameter-override-pipeline
+    nodes:
+      - name: print-1
+        type: execution
+        step: print-parameters
+      - name: print-2
+        type: execution
+        step: print-parameters
+        override:
+          parameters:
+            - name: alpha
+              type: string
+              default: 123
+      - name: print-3
+        type: execution
+        step: print-parameters
+    edges:
+      - [print-1.output.*, print-2.input.dataset]
+      - [print-2.output.*, print-3.input.dataset]
