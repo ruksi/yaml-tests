@@ -1,0 +1,18 @@
+
+- step:
+    name: print-parameters
+    description: |
+      Simply prints out values received through command line.
+    image: python:3.6
+    command:
+      - python print_parameters.py {parameters}
+    parameters:
+      - name: alpha
+        type: string
+        default: AaA
+      - name: beta
+        type: string
+        default: bBb
+      - name: gamma
+        type: string
+        default: g g G
