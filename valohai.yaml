@@ -40,3 +40,258 @@
     edges:
       - [print-1.output.*, print-2.input.dataset]
       - [print-2.output.*, print-3.input.dataset]
+
+- pipeline:
+    name: one-nodes
+    nodes:
+      - name: print-1-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+    edges:
+      - [print-1-and-the-name-is-really-really-long.output.*, print-1-and-the-name-is-really-really-long.input.dataset]
+
+- pipeline:
+    name: two-nodes
+    nodes:
+      - name: print-1-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-2-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+    edges:
+      - [print-1-and-the-name-is-really-really-long.output.*, print-2-and-the-name-is-really-really-long.input.dataset]
+
+- pipeline:
+    name: three-nodes
+    nodes:
+      - name: print-1-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-2-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-3-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+    edges:
+      - [print-1-and-the-name-is-really-really-long.output.*, print-2-and-the-name-is-really-really-long.input.dataset]
+      - [print-2-and-the-name-is-really-really-long.output.*, print-3-and-the-name-is-really-really-long.input.dataset]
+
+- pipeline:
+    name: four-nodes
+    nodes:
+      - name: print-1-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-2-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-3-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-4-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+    edges:
+      - [print-1-and-the-name-is-really-really-long.output.*, print-2-and-the-name-is-really-really-long.input.dataset]
+      - [print-2-and-the-name-is-really-really-long.output.*, print-3-and-the-name-is-really-really-long.input.dataset]
+      - [print-3-and-the-name-is-really-really-long.output.*, print-4-and-the-name-is-really-really-long.input.dataset]
+
+- pipeline:
+    name: five-nodes
+    nodes:
+      - name: print-1-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-2-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-3-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-4-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-5-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+    edges:
+      - [print-1-and-the-name-is-really-really-long.output.*, print-2-and-the-name-is-really-really-long.input.dataset]
+      - [print-2-and-the-name-is-really-really-long.output.*, print-3-and-the-name-is-really-really-long.input.dataset]
+      - [print-3-and-the-name-is-really-really-long.output.*, print-4-and-the-name-is-really-really-long.input.dataset]
+      - [print-4-and-the-name-is-really-really-long.output.*, print-5-and-the-name-is-really-really-long.input.dataset]
+
+- pipeline:
+    name: six-nodes
+    nodes:
+      - name: print-1-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-2-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-3-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-4-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-5-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-6-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+    edges:
+      - [print-1-and-the-name-is-really-really-long.output.*, print-2-and-the-name-is-really-really-long.input.dataset]
+      - [print-2-and-the-name-is-really-really-long.output.*, print-3-and-the-name-is-really-really-long.input.dataset]
+      - [print-3-and-the-name-is-really-really-long.output.*, print-4-and-the-name-is-really-really-long.input.dataset]
+      - [print-4-and-the-name-is-really-really-long.output.*, print-5-and-the-name-is-really-really-long.input.dataset]
+      - [print-5-and-the-name-is-really-really-long.output.*, print-6-and-the-name-is-really-really-long.input.dataset]
+
+- pipeline:
+    name: seven-nodes
+    nodes:
+      - name: print-1-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-2-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-3-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-4-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-5-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-6-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-7-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+    edges:
+      - [print-1-and-the-name-is-really-really-long.output.*, print-2-and-the-name-is-really-really-long.input.dataset]
+      - [print-2-and-the-name-is-really-really-long.output.*, print-3-and-the-name-is-really-really-long.input.dataset]
+      - [print-3-and-the-name-is-really-really-long.output.*, print-4-and-the-name-is-really-really-long.input.dataset]
+      - [print-4-and-the-name-is-really-really-long.output.*, print-5-and-the-name-is-really-really-long.input.dataset]
+      - [print-5-and-the-name-is-really-really-long.output.*, print-6-and-the-name-is-really-really-long.input.dataset]
+      - [print-6-and-the-name-is-really-really-long.output.*, print-7-and-the-name-is-really-really-long.input.dataset]
+
+- pipeline:
+    name: eight-nodes
+    nodes:
+      - name: print-1-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-2-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-3-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-4-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-5-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-6-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-7-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-8-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+    edges:
+      - [print-1-and-the-name-is-really-really-long.output.*, print-2-and-the-name-is-really-really-long.input.dataset]
+      - [print-2-and-the-name-is-really-really-long.output.*, print-3-and-the-name-is-really-really-long.input.dataset]
+      - [print-3-and-the-name-is-really-really-long.output.*, print-4-and-the-name-is-really-really-long.input.dataset]
+      - [print-4-and-the-name-is-really-really-long.output.*, print-5-and-the-name-is-really-really-long.input.dataset]
+      - [print-5-and-the-name-is-really-really-long.output.*, print-6-and-the-name-is-really-really-long.input.dataset]
+      - [print-6-and-the-name-is-really-really-long.output.*, print-7-and-the-name-is-really-really-long.input.dataset]
+      - [print-7-and-the-name-is-really-really-long.output.*, print-8-and-the-name-is-really-really-long.input.dataset]
+
+- pipeline:
+    name: nine-nodes
+    nodes:
+      - name: print-1-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-2-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-3-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-4-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-5-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-6-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-7-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-8-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+      - name: print-9-and-the-name-is-really-really-long
+        type: execution
+        step: print-parameters
+    edges:
+      - [print-1-and-the-name-is-really-really-long.output.*, print-2-and-the-name-is-really-really-long.input.dataset]
+      - [print-2-and-the-name-is-really-really-long.output.*, print-3-and-the-name-is-really-really-long.input.dataset]
+      - [print-3-and-the-name-is-really-really-long.output.*, print-4-and-the-name-is-really-really-long.input.dataset]
+      - [print-4-and-the-name-is-really-really-long.output.*, print-5-and-the-name-is-really-really-long.input.dataset]
+      - [print-5-and-the-name-is-really-really-long.output.*, print-6-and-the-name-is-really-really-long.input.dataset]
+      - [print-6-and-the-name-is-really-really-long.output.*, print-7-and-the-name-is-really-really-long.input.dataset]
+      - [print-7-and-the-name-is-really-really-long.output.*, print-8-and-the-name-is-really-really-long.input.dataset]
+      - [print-8-and-the-name-is-really-really-long.output.*, print-9-and-the-name-is-really-really-long.input.dataset]
+
+- pipeline:
+    name: three-parallel
+    nodes:
+      - name: preprocess
+        type: execution
+        step: print-parameters
+      - name: train1
+        type: execution
+        step: print-parameters
+      - name: train2
+        type: execution
+        step: print-parameters
+      - name: train3
+        type: execution
+        step: print-parameters
+      - name: evaluate1
+        type: execution
+        step: print-parameters
+      - name: evaluate2
+        type: execution
+        step: print-parameters
+      - name: evaluate3
+        type: execution
+        step: print-parameters
+      - name: choose
+        type: execution
+        step: print-parameters
+    edges:
+      - [preprocess.output.*, train1.input.input.dataset]
+      - [preprocess.output.*, train2.input.input.dataset]
+      - [preprocess.output.*, train3.input.input.dataset]
+      - [train1.output.model*, evaluate1.input.model]
+      - [train2.output.model*, evaluate2.input.model]
+      - [train3.output.model*, evaluate3.input.model]
+      - [evaluate1.output.*, choose.input.model]
+      - [evaluate2.output.*, choose.input.model]
+      - [evaluate3.output.*, choose.input.model]
