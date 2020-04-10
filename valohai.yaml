@@ -1,5 +1,22 @@
 
 - step:
+    name: debug-parameters
+    description: |
+      Simply prints out values received through command line.
+    image: python:3.6
+    command:
+      - python print_parameters.py {parameters}
+    parameters:
+      - name: backbone_lr
+        type: float
+        optional: True
+        description: Base learning rate.
+      - name: cosine_scheduler_t
+        type: integer
+        optional: True
+        description: Number of epochs.
+
+- step:
     name: print-parameters
     description: |
       Simply prints out values received through command line.
